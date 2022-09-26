@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: hzc
+    password: 18952427920@qaz
+    url: jdbc:mysql://rm-bp1bk4vg7s03bu9262o.mysql.rds.aliyuncs.com:3306/yuan_huan
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+  redis:
+    # redis数据库索引(默认为0)，我们使用索引为3的数据库，避免和其他数据库冲突
+    database: 0
+    # redis服务器地址（默认为localhost）
+    host: 127.0.0.1
+    # redis端口（默认为6379）
+    port: 6379
+    # redis访问密码（默认为空）
+    # redis连接超时时间（单位毫秒）
