@@ -40,6 +40,7 @@ public class LoginController {
 
     @PostMapping("/test")
     public ComResult<String> test(){
+        System.out.println(111);
         return new ComResult<>(200, "success", null);
     }
 }
