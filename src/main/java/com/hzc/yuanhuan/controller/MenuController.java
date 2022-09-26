@@ -22,4 +22,5 @@ public class MenuController {
         List<Menu> menu = menuService.getMenu();
         return new ComResult<>(200,"success",menu);
     }
+
 }
